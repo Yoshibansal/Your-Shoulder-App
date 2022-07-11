@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-import pickle, string, util, cv2
+import pickle, string, util
 import numpy as np
 import json, random
 from os.path import exists
@@ -47,18 +47,18 @@ def predict(sen, vectorizer, clf):
 #     model = load_model('static/models/emotion_cnn/model-recent.h5')
 #     return model
 
-def preprocess_image(img):
-    he = util.face(img)
-    img2 = he.cropDetect()
+# def preprocess_image(img):
+#     he = util.face(img)
+#     img2 = he.cropDetect()
 
-    img = cv2.cvtColor(img2, cv2.COLOR_GRAY2RGB)
-    resized = cv2.resize(img, (48,48), interpolation = cv2.INTER_LANCZOS4)
-    print(resized.shape)
+#     img = cv2.cvtColor(img2, cv2.COLOR_GRAY2RGB)
+#     resized = cv2.resize(img, (48,48), interpolation = cv2.INTER_LANCZOS4)
+#     print(resized.shape)
 
-    img_batch = np.expand_dims(resized, 0)
-    print(img_batch.shape)
+#     img_batch = np.expand_dims(resized, 0)
+#     print(img_batch.shape)
 
-    return img_batch
+#     return img_batch
 
 # def predict_cnn(model, img_batch):
 #     y_val_pred = model.predict(img_batch)
