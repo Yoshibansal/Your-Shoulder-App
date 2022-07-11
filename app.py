@@ -3,7 +3,7 @@ import pickle, string, util, cv2
 import numpy as np
 import json, random
 from os.path import exists
-from tensorflow.keras.utils import pad_sequences
+from keras.utils import pad_sequences
 
 app = Flask(__name__)
 app.static_folder = 'static'
