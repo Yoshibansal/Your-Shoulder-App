@@ -9,4 +9,5 @@ opencv-python==4.6.0.66
 numpy==1.22.3
 pickleshare==0.7.5
 Pillow==9.0.1
+tensorflow==2.8.2
 Werkzeug==2.0.3
