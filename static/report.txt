@@ -24,3 +24,4 @@ Do you feel sad, mad, hopeless, stuck, or something else?, Talk to me... 🥺, S
 Hey how are you holding up?, hy, Neutral, sadness
 Have you been to therapy before or seeked help from someone?, hy, Neutral, sadness
 How have you felt over the past couple of days?, hy, Neutral, sadness
+In your mind, what brings you here today?, hy there, Neutral, joy
